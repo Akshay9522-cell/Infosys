@@ -153,6 +153,36 @@ nav h1 {
   opacity: 0.5;
 }
 
+.secfive .next {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #090908;
+}
+.secfive .next h2 {
+  font-size: 60px;
+}
+.secfive .next h4 {
+  font-size: 30px;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.sec5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sec5 .left5:hover {
+  scale: 110%;
+}
+.sec5 .right5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sec5 .right5 img:hover {
+  transform: scale(0.2);
+}
+
 @media screen and (max-width: 786px) {
   .sec2 img {
     position: relative;
@@ -161,5 +191,8 @@ nav h1 {
   }
   .sec2 .left {
     padding-left: 30px;
+  }
+  .sec5 {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=index.css.map */

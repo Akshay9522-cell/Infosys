@@ -168,6 +168,49 @@ nav h1{
 
 }
 
+// section 5
+ 
+.secfive{
+    .next{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #090908;
+        h2{
+            font-size: 60px;
+        }
+        h4{
+            font-size: 30px;
+            font-weight: 300;
+            opacity: .5;
+        }
+    }
+}
+
+.sec5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+    .left5{
+        &:hover{
+            scale: 110%;
+        }
+    }
+  
+    .right5{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+        img{
+               &:hover{
+            transform: scale(.2)
+        }
+        }
+    }
+   
+
+}
+
 // media uery tablet
 
 @media screen and (max-width:786px){
@@ -183,5 +226,8 @@ nav h1{
             padding-left: 30px;
         }
     
+    }
+    .sec5{
+        grid-template-columns: 1fr;
     }
 }
