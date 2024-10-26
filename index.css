@@ -327,14 +327,17 @@ nav h1 {
     flex-direction: column;
   }
   .sec4 h1 {
-    font-style: 28px;
+    font-size: 25px;
     margin: auto;
-    padding: 30px;
+    padding: 28px;
   }
   .sec4 .right {
     flex-direction: inherit;
   }
   .footer {
     grid-template-columns: auto;
+  }
+  .secondlast .right h4 {
+    font-size: 40px;
   }
 }/*# sourceMappingURL=index.css.map */
