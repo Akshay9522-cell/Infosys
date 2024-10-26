@@ -182,6 +182,59 @@ nav h1 {
   transform: scale(0.2);
 }
 
+.secondlast {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(249, 211, 170);
+}
+.secondlast .right {
+  font-size: 80px;
+  color: white;
+}
+.secondlast .right button {
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+.secondlast .right button:hover {
+  background-color: rgb(46, 171, 129);
+  color: black;
+}
+.secondlast .left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.secondlast .left .box1 {
+  background: url(/images/india.jpg) no-repeat center center/cover;
+}
+.secondlast .left .box2 {
+  background: url(/images/america.jpg) no-repeat center center/cover;
+}
+.secondlast .left .box3 {
+  background: url(/images/france.jpg) no-repeat center center/cover;
+}
+.secondlast .left .box4 {
+  background: url(/images/pexels-timfuzail-2792601.jpg) no-repeat center center/cover;
+}
+.secondlast .left .box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  font-size: 30px;
+}
+.secondlast .left .box:hover {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+}
+
 .footer {
   display: flex;
   justify-content: space-evenly;
@@ -220,6 +273,9 @@ nav h1 {
 }
 
 @media screen and (max-width: 786px) {
+  .secondlast {
+    flex-direction: column;
+  }
   .hero nav .glass {
     display: none;
   }

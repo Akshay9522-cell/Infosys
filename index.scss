@@ -213,6 +213,69 @@ nav h1{
 
 }
 
+.secondlast{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(249, 211, 170);
+
+    .right{
+        font-size: 80px;
+        color: white;
+
+        button{
+            padding: 20px;
+            background-color: black;
+            color: white;
+
+            &:hover{
+                background-color: rgb(46, 171, 129);
+                color: black;
+            }
+        }
+    }
+
+    .left{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+         padding-top: 100px;
+         padding-bottom: 100px;
+
+         .box1{
+            background: url(/images/india.jpg)no-repeat center center/cover;
+         }
+           .box2{
+            background: url(/images/america.jpg)no-repeat center center/cover;
+         }
+           .box3{
+            background: url(/images/france.jpg)no-repeat center center/cover;
+         }
+           .box4{
+            background: url(/images/pexels-timfuzail-2792601.jpg)no-repeat center center/cover;
+         }
+
+
+        .box{
+
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            text-align: center;
+            color: white;
+            padding-top: 50%;
+            padding-bottom: 50%;
+            font-size: 30px;
+           &:hover{
+            background-color: white;
+            opacity: .8;
+            color: black;
+           }
+          
+           
+        }
+    }
+}
+
 //FOTTER
 
 .footer{
@@ -262,6 +325,10 @@ nav h1{
 
 @media screen and (max-width:786px){
 
+
+    .secondlast{
+        flex-direction: column;
+    }
      .hero nav .glass{
         display: none;
      }
