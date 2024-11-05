@@ -25,9 +25,12 @@
 }
 .hero nav{
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;   
+    align-items: center; 
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+
 }
 nav h1{
     color: white;
@@ -320,10 +323,39 @@ nav h1{
         padding: 10px;
     }
 }
+header input{
+    display: none;
+}
+header nav label{
+    display: none;
+}
+
 
 // media uery tablet
 
 @media screen and (max-width:786px){
+
+header nav label{
+display: block;
+}
+.hero nav{
+justify-content: space-around;
+}
+header nav h1{
+    display: block;
+}
+
+ #bar:checked ~ nav ul li a{
+     display: block;
+      z-index: 1999;
+      position: absolute;  
+      right:10px;
+      color: white;
+    background-color: #c0702a;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+      }
 
 
     .secondlast{
